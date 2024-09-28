@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+.shapka{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.log{
+    width:100px;
+    height:100px;
+    float:left;
+    margin:5px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    margin: 0px auto;
+    font-size: 30px;
+    width: 100%;
+}
+nav{
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: orange;
+    width: 100%;
+}
+
+nav a{
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+nav a:hover{
+    background-color: black;
+}
+nav a.active{
+    background-color: green;
+}
+
+.content{
+    background-color: orange;
+    display: flex;
+    margin: 0px auto;
+    width: 100%;
+    justify-content: center;
+}
+table {
+    font-size: 20px;
+    background-color: red;
+    margin: 0px auto;
+    width: 100%;
+}
+
+th{
+    background-color: orange;
+}
+tr:nth-child(even){
+    background-color: dodgerblue;
+}
+tr:nth-child(odd){
+    background-color: darkviolet;
+}
+footer{
+    background-color: red;
+    display: flex;
+}
+
+.peremesh{
+    display: flex;
+    flex-direction: column;
+}
+
+#Tabl{
+    order:-1;
+}
+
+#tabliza {
+    order:-1;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        font-size: 20px;
+    }
+    nav{
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 15%;
+    }
+    nav a{
+        padding: 0px 16px;
+    }
+    .content{
+        width: 45%;
+    }
+    table{
+        font-size: 35px;
+        width: 45%;
+    }
+    #Tabl{
+        order:0;
+    }
+    #tabliza{
+        order: 0;
+    }
+}
